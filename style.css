@@ -45,7 +45,11 @@ button {
   font-style: none;
   background: none;
 }
+.upper-menu-right {
+    display: flex;
+    flex-direction: row;
 
+}
 .upper-menu__icon {
   width: 40px;
   height: 40px;
@@ -95,6 +99,9 @@ h1 {
   margin-right: 12px;
 }
 .title-menu__button {
+  display: none;
+}
+.title-menu__button1, .title-menu__button2  {
   display: none;
 }
 .title-menu__icon {
@@ -219,7 +226,7 @@ li {
   margin-right: 250.73px;
   margin-left: 8.73px;
 }
-.title-menu__button {
+.title-menu__button1, .title-menu__button2  {
   display: none;
 }
 .title-menu__icon {
@@ -363,7 +370,13 @@ li {
           margin-right: 32px;
           margin-left: 8px;
         }
-        
+        .title-menu__button1, .title-menu__button2  {
+          display: block;
+          font-family: "TT Lakes Regular";
+          font-size: 16px;
+          line-height: 24px;
+          font-weight: 900;
+        }
         
         .scroll-menu {
           
