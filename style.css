@@ -234,10 +234,10 @@ a {
 .scroll-menu::after {
   position: absolute;
   content: '';
-  left: 92.5%;
-  right: 0%;
-  top: 6.51%;
-  bottom: 85.56%;
+  left: auto;
+  right: 0;
+  top: 0;
+  bottom: auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -405,16 +405,16 @@ a {
 
   .scroll-menu::after {
     content: '';
-    left: 97.5%;
-    right: 0%;
-    top: 16.51%;
-    bottom: 75.56%;
+    left: auto;
+    right: 0;
+    top: 0;
+    bottom: auto;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-end;
+    align-items: flex-end;
     background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
-    width: 24px;
+    width: 19.31px;
     height: 40px;
   }
 
