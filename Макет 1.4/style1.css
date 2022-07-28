@@ -43,6 +43,7 @@ body {
     height: 88px;
     align-items: center;
     background-color: #fff;
+    margin-bottom: 32px;
 }
 
 .main {
@@ -56,18 +57,6 @@ body {
 div {
     margin: 0;
     padding: 0;
-}
-
-.upper-menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0;
-    padding: 0;
-    border-style: none;
-    font-style: none;
-    border-bottom: 1px solid #D9FFF5;
-    align-items: center;
 }
 
 .upper-menu_right {
@@ -93,20 +82,20 @@ div {
     background-color: #fff;
 }
 
-.upper-menu__button1 {
+.upper-menu__button_burgerX {
     margin: 0 30px 0 24px;
     width: 40px;
     height: 40px;
     background-image: url(./img/icon/burgerX.svg);
 }
 
-.upper-menu__button1:hover {
+.upper-menu__button_burgerX:hover {
     transition-duration: 2s;
     background-image: url(./img/icon/burger.svg);
     opacity: 0.6;
 }
 
-.upper-menu__button2 {
+.upper-menu__button_logo {
     width: 98px;
     height: 52px;
     padding: 0;
@@ -115,35 +104,36 @@ div {
     cursor: pointer;
 }
 
-.upper-menu__button2:hover {
+.upper-menu__button_logo:hover {
     opacity: 0.6;
 }
 
-.upper-menu__button3 {
+.upper-menu__button_search {
     margin: 0 24px 0 0;
     width: 40px;
     height: 40px;
     background-image: url(./img/icon/search.svg);
 }
 
-.upper-menu__button3:hover {
+.upper-menu__button_search:hover {
     opacity: 0.6;
 }
 .main-menu {
-    position: relative;
     width: auto;
     height: auto;
 }
 
-.main-menu__list {
-    position: relative;
+.main-menu__list_items > a{
     display: flex;
     flex-direction: column;
-    align-items: baseline;
+    align-items: flex-start;
+    justify-content: flex-start;
     align-content: space-between;
     list-style-type: none;
-    margin-top: 32px;
-    width: auto;
+    margin: 0;
+    padding: 0;
+    width: 222px;
+    height: 24px;
 }
 
 .main-menu__list a {
@@ -152,7 +142,7 @@ div {
     color: #1B1C21;
 }
 
-.main-menu__list > li {
+.main-menu__list_items {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
@@ -162,34 +152,30 @@ div {
     font-weight: 900;
     box-sizing: border-box;
     color: #1B1C21;;
-    margin: 0 0 32px 24px;
+    margin: 0 0 24px 0;
+    padding-left: 24px;
     text-align: right;
-    width: 222px;
-    height: 24px;
+    width: 320px;
+    height: 32px;
     white-space: nowrap;
 }
-.main-menu__list_repair > a  {
-       
+.main-menu__list_items:first-child {
     color: #7E7E82;
-    
+    background-image: url(./img/icon/highlightX.svg);
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+}
+.main-menu__list_items:first-child a {
+color: #7E7E82;
 }
 
-.main-menu__select-icon {
-    padding: 0 20px 0 0px;
-    margin-left: -24px;
-}
-
-.main-menu__list_services a:hover,
-.main-menu__list_corps a:hover,
-.main-menu__list_sellers a:hover,
-.main-menu__list_partners a:hover,
-.main-menu__list_producers a:hover,
-.main-menu__list_centers a:hover,
-.main-menu__list_contacts a:hover,
-.main-menu__list_repair a:hover {
+.main-menu__list_items a:hover {
     color: #7E7E82;
 }
 
+.main-menu__list_items > a{
+    height: 24px;
+}
 .footer {
     position: absolute;
     bottom: 32px;
@@ -209,7 +195,7 @@ div {
     margin-left: 16px;
 }
 
-.lower-menu__button1 {
+.lower-menu__button_call {
     display: block;
     align-items: center;
     width: 40px;
@@ -218,11 +204,11 @@ div {
     background-image: url(./img/icon/call.svg);
 }
 
-.lower-menu__button1:hover {
+.lower-menu__button_call:hover {
     opacity: 0.6;
 }
 
-.lower-menu__button2 {
+.lower-menu__button_chat {
     display: block;
     align-items: center;
     width: 40px;
@@ -231,11 +217,11 @@ div {
     background-image: url(./img/icon/chat.svg);
 }
 
-.lower-menu__button2:hover {
+.lower-menu__button_chat:hover {
     opacity: 0.6;
 }
 
-.lower-menu__button3 {
+.lower-menu__button_profile {
     display: block;
     align-items: center;
     width: 40px;
@@ -244,7 +230,7 @@ div {
     background-image: url(./img/icon/profile.svg);
 }
 
-.lower-menu__button3:hover {
+.lower-menu__button_profile:hover {
     opacity: 0.6;
 }
 
