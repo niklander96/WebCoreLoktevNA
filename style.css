@@ -9,6 +9,21 @@
 }
 
 @font-face {
+  font-family: "TT Lakes Condensed-Light";
+  src: url("fonts/TTLakesCondensed-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "TT Lakes Condensed-Regular";
+  src: url("fonts/TTLakesCondensed-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "TT Lakes Light";
+  src: url("fonts/TTLakes-Light.woff") format("woff");
+}
+
+@font-face {
   font-family: "TT Lakes Thin";
   src: url("fonts/TTLakes-Thin.woff") format("woff");
 }
@@ -209,11 +224,11 @@ a {
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  font-family: "TT Lakes Regular";
+  font-family: "TT Lakes Light";
   font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0.2px;
   font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.2px;
   box-sizing: border-box;
   color: #7E7E82;
   padding: 0 16px;
@@ -255,13 +270,13 @@ a {
 
 .about__description {
   display: block;
-  font-family: "TT Lakes Regular";
+  font-family: "TT Lakes Light";
   text-align: left;
   letter-spacing: 0.4px;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 20px;
   letter-spacing: 0.2px;
-  font-weight: 550;
+  font-weight: 900;
   margin-bottom: 24px;
   margin-left: 16px;
   margin-right: 16px;
@@ -306,7 +321,7 @@ a {
 
 .about__picture img {
   max-width: 320px;
-  margin: 20px auto auto auto;
+  margin: 30px auto 10px auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -430,7 +445,7 @@ a {
 
   .about__description {
     width: 50%;
-    font-family: "TT Lakes Thin";
+    font-family: "TT Lakes Light";
     font-weight: 900;
     text-align: left;
     align-items: flex-start;
@@ -546,7 +561,7 @@ a {
     background-position: right;
     width: 168px;
     height: 40px;
-    margin: 0 40px 0 32px;
+    margin: 0 32px 0 32px;
   }
 
   .scroll-menu {
@@ -574,7 +589,7 @@ a {
     width: 50%;
     display: flex;
     flex-direction: column;
-    font-family: "TT Lakes Thin";
+    font-family: "TT Lakes Light";
     font-weight: 900;
     text-align: left;
     letter-spacing: 0.4px;
@@ -603,6 +618,7 @@ a {
     line-height: 24px;
     font-weight: 900;
     padding-top: 5px;
+    padding-bottom: 10px;
   }
 
   .about__picture {
