@@ -166,7 +166,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .title-text {
-    padding: 24px;
+    padding: 16px 24px;
   }
 
 
@@ -324,7 +324,7 @@ body {
 
 @media screen and (min-width: 1120px) {
   .title-text {
-    padding: 32px;
+    padding: 16px 32px;
   }
 
   .slider__list {
